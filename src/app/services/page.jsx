@@ -57,13 +57,13 @@ const data = [
 export default function ServicesPage() {
   return (
     <div>
-      <h1 className="font-bold text-3xl">Services</h1>
+      <h1 className="font-bold text-3xl mb-5">Services</h1>
 
       <div className="grid grid-cols-3 gap-5">
         {data.map((service) => (
           <div key={service.id}>
             <Link href={`/services/${service.id}`}>
-              <h2>{service.service_name}</h2>
+              <h2 className="border border-amber-950 px-5 py-1.5 rounded-b-md">{service.service_name}</h2>
             </Link>
           </div>
         ))}
